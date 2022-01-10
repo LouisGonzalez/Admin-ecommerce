@@ -13,7 +13,7 @@ const app = express();
 require('./Db');
 
 app.use(express.static(__dirname+'/admin-view/dist/admin-view'));
-app.get('/',function(req, res){
+app.get('/*',function(req, res){
     res.sendFile(path.join(__dirname+'/admin-view/dist/admin-view/index.html'));
 });
 

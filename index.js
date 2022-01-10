@@ -15,6 +15,7 @@ require('./Db');
 app.use(express.static(__dirname+'/admin-view/dist/admin-view'));
 app.get('/*',function(req, res){
     res.sendFile(path.join(__dirname+'/admin-view/dist/admin-view/index.html'));
+    console.log(__dirname)
 });
 
 //Configuraciones CORS
@@ -34,5 +35,7 @@ app.use('/api', apiRouter);
 
 app.use(express.static(__dirname + '/admin-view'));
 app.listen(port, ()  => {
+    console.log(__dirname)
+
     console.log("Servidor iniciado en el puerto "+port);
 })

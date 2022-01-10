@@ -37,6 +37,7 @@ export class ToolbarComponent implements OnInit {
   seeStatus(){
     this.swService.get("1").subscribe(data => {
       this.sw = data.sw
+      console.log(this.sw)
     })
     
   }

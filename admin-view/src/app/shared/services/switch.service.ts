@@ -4,6 +4,7 @@ import { catchError, Observable, throwError } from 'rxjs';
 import { Switch } from '../models/switch';
 
 const URL = 'https://adminecommerce.herokuapp.com/api/switch'
+//const URL = 'http://localhost:3000/api/switch'
 
 @Injectable({
   providedIn: 'root'
@@ -13,9 +14,8 @@ export class SwitchService {
   constructor(private httpClient: HttpClient) { }
 
   get(id: string): Observable<any>{
-    return this.httpClient.get(`${URL}/${id}`).pipe(
-      catchError(this.handleError)
-  )
+    let a = this.httpClient.get(`${URL}/${id}`);
+    return a;
   }
   
   update(sw: Switch){

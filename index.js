@@ -13,9 +13,9 @@ const app = express();
 require('./Db');
 
 app.use(express.static(__dirname+'/admin-view/dist/admin-view'));
-app.get('/*',function(req, res){
+app.get('/',function(req, res){
     res.sendFile(path.join(__dirname+'/admin-view/dist/admin-view/index.html'));
-    console.log(__dirname)
+    console.log(__dirname,  "  asdfdfasd")
 });
 
 //Configuraciones CORS
@@ -24,8 +24,8 @@ app.use(cors({
     origin: "https://adminecommerce.herokuapp.com/",
     credentials: true
 }))
-app.use(cookieParser());
-app.use(bodyParser());
+//app.use(cookieParser());
+//app.use(bodyParser());
 
 
 app.use(express.json());

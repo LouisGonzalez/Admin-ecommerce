@@ -3,6 +3,11 @@ const path = require('path');
 const port = process.env.PORT || 3000;
 const apiRouter = require('./Routes/api.js')
 const cors = require('cors');
+const bodyParser = require('body-parser');
+var cookieParser = require('cookie-parser');
+
+
+
 
 const app = express();
 require('./Db');
@@ -13,11 +18,14 @@ app.get('/',function(req, res){
 });
 
 //Configuraciones CORS
-const corsOptions = { origin: "http://localhost:3000/" }
+const corsOptions = { origin: "https://adminecommerce.herokuapp.com/" }
 app.use(cors({
-    origin: "http://localhost:3000/",
+    origin: "https://adminecommerce.herokuapp.com/",
     credentials: true
 }))
+app.use(cookieParser());
+app.use(bodyParser());
+
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));

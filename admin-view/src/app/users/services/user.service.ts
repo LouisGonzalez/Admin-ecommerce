@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import { catchError, Observable, throwError } from 'rxjs';
 import { User } from '../models/user';
 
-const URL = 'http://localhost:3000/api/user'
+const URL = 'https://adminecommerce.herokuapp.com/api/user'
 
 @Injectable({
   providedIn: 'root'

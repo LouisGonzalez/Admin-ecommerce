@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import { catchError, Observable, throwError } from 'rxjs';
 import { Switch } from '../models/switch';
 
-const URL = 'http://localhost:3000/api/switch'
+const URL = 'https://adminecommerce.herokuapp.com/api/switch'
 
 @Injectable({
   providedIn: 'root'

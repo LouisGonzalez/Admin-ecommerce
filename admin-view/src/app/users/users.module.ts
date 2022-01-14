@@ -9,7 +9,7 @@ import { MaterialModule } from '../shared/material/material.module';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { ReportComponent } from './components/report/report.component';
-
+import { DataTablesModule } from 'angular-datatables';
 @NgModule({
   declarations: [
     UsersComponent,
@@ -22,7 +22,8 @@ import { ReportComponent } from './components/report/report.component';
     SharedModule,
     MaterialModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    DataTablesModule
   ]
 })
 export class UsersModule { }

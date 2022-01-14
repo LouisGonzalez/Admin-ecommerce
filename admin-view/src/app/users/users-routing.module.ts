@@ -12,6 +12,7 @@ const routes: Routes = [
   },
   {
     path: '',
+    canActivate: [LoginGuard],
     component: UsersComponent,
     children: [
       {

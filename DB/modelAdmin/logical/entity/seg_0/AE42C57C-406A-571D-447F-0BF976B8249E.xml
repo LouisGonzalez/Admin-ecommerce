@@ -1,0 +1,115 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="AE42C57C-406A-571D-447F-0BF976B8249E" name="Report">
+<createdBy>Luis</createdBy>
+<createdTime>2022-01-11 18:53:04 UTC</createdTime>
+<ownerDesignName>modelAdmin</ownerDesignName>
+<engineerTo>
+<item key="32253C9C-B2FA-E091-60CB-9F6D8D6669D8" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="37280114-5B6C-E389-EB05-4A2D42D6265C">
+<createdBy>Luis</createdBy>
+<createdTime>2022-01-11 18:53:18 UTC</createdTime>
+<ownerDesignName>modelAdmin</ownerDesignName>
+<engineerTo>
+<item key="32253C9C-B2FA-E091-60CB-9F6D8D6669D8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="type" id="DB443723-BCFC-DF34-73F6-D216ACB7495F">
+<createdBy>Luis</createdBy>
+<createdTime>2022-01-11 18:53:18 UTC</createdTime>
+<ownerDesignName>modelAdmin</ownerDesignName>
+<engineerTo>
+<item key="32253C9C-B2FA-E091-60CB-9F6D8D6669D8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="user" id="98386DCC-85EE-3E20-CA48-C75AC7C39FFE">
+<createdBy>Luis</createdBy>
+<createdTime>2022-01-11 18:53:18 UTC</createdTime>
+<ownerDesignName>modelAdmin</ownerDesignName>
+<engineerTo>
+<item key="32253C9C-B2FA-E091-60CB-9F6D8D6669D8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>75</dataTypeSize>
+<ownDataTypeParameters>75,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="date" id="8F1B43A5-7B57-B808-5E22-4243A0590622">
+<createdBy>Luis</createdBy>
+<createdTime>2022-01-11 18:53:18 UTC</createdTime>
+<ownerDesignName>modelAdmin</ownerDesignName>
+<engineerTo>
+<item key="32253C9C-B2FA-E091-60CB-9F6D8D6669D8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="hour" id="5A25CDA1-AA20-AFBC-457F-1151CFC4C34D">
+<createdBy>Luis</createdBy>
+<createdTime>2022-01-11 18:53:19 UTC</createdTime>
+<ownerDesignName>modelAdmin</ownerDesignName>
+<engineerTo>
+<item key="32253C9C-B2FA-E091-60CB-9F6D8D6669D8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="status" id="0B7304D7-A4C8-AD00-EEE1-85B50B09AEE0">
+<createdBy>Luis</createdBy>
+<createdTime>2022-01-11 18:54:06 UTC</createdTime>
+<ownerDesignName>modelAdmin</ownerDesignName>
+<engineerTo>
+<item key="32253C9C-B2FA-E091-60CB-9F6D8D6669D8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="1418F900-001D-FEEF-5366-EA4A9DF4E8EA" name="Report PK">
+<createdBy>Luis</createdBy>
+<createdTime>2022-01-11 18:53:25 UTC</createdTime>
+<ownerDesignName>modelAdmin</ownerDesignName>
+<engineerTo>
+<item key="32253C9C-B2FA-E091-60CB-9F6D8D6669D8" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>37280114-5B6C-E389-EB05-4A2D42D6265C</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

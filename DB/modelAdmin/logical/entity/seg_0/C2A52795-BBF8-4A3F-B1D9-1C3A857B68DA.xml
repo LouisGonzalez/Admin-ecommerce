@@ -1,0 +1,65 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C2A52795-BBF8-4A3F-B1D9-1C3A857B68DA" name="User">
+<createdBy>Luis</createdBy>
+<createdTime>2022-01-11 19:01:40 UTC</createdTime>
+<ownerDesignName>modelAdmin</ownerDesignName>
+<engineerTo>
+<item key="32253C9C-B2FA-E091-60CB-9F6D8D6669D8" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="2DD3F54B-7E07-4478-BCBE-37E044B342B6">
+<createdBy>Luis</createdBy>
+<createdTime>2022-01-11 19:01:44 UTC</createdTime>
+<ownerDesignName>modelAdmin</ownerDesignName>
+<engineerTo>
+<item key="32253C9C-B2FA-E091-60CB-9F6D8D6669D8" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="username" id="91E4B875-9E10-AB6C-4F94-3CBB8B447919">
+<createdBy>Luis</createdBy>
+<createdTime>2022-01-11 19:01:44 UTC</createdTime>
+<ownerDesignName>modelAdmin</ownerDesignName>
+<engineerTo>
+<item key="32253C9C-B2FA-E091-60CB-9F6D8D6669D8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="password" id="645138EA-290E-1A70-944B-06175B401103">
+<createdBy>Luis</createdBy>
+<createdTime>2022-01-11 19:01:44 UTC</createdTime>
+<ownerDesignName>modelAdmin</ownerDesignName>
+<engineerTo>
+<item key="32253C9C-B2FA-E091-60CB-9F6D8D6669D8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B30A1102-FFB9-4A7F-B4CB-D570A17C9BC7" name="User PK">
+<createdBy>Luis</createdBy>
+<createdTime>2022-01-11 19:01:59 UTC</createdTime>
+<ownerDesignName>modelAdmin</ownerDesignName>
+<engineerTo>
+<item key="32253C9C-B2FA-E091-60CB-9F6D8D6669D8" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>2DD3F54B-7E07-4478-BCBE-37E044B342B6</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

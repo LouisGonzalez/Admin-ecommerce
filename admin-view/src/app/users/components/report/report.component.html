@@ -1,1 +1,27 @@
-<p>report works!</p>
+<table  datatable [dtOptions]="dtOptions" [dtTrigger]="dtTrigger"  class="row-border hover">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Fecha</th>
+        <th>Hora</th>
+        <th>Usuario</th>
+        <th>Tipo</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let report of reports">
+        <td>{{ report.id }}</td>
+        <td>{{ report.date }}</td>
+        <td>{{ report.hour }}</td>
+        <td>{{ report.user }}</td>
+        <td>{{ report.type }}</td>
+        <td>{{ report.status }}</td>
+      </tr>
+    </tbody>
+    <tbody *ngIf="reports?.length == 0">
+        <tr>
+          <td colspan="3" class="no-data-available">No data!</td>
+        </tr>
+      </tbody>
+  </table>

@@ -18,8 +18,8 @@ export class SwitchService {
     return a;
   }
   
-  update(sw: Switch){
-    console.log(`${URL}/1`)
+  update(sw: Switch, id:any){
+    console.log(`${URL}/${id}`)
     return this.httpClient.put(`${URL}/${sw.id}`, sw).subscribe(data => {
       //console.log(data)
     })

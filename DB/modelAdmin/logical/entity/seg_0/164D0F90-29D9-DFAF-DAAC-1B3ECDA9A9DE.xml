@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="164D0F90-29D9-DFAF-DAAC-1B3ECDA9A9DE" name="Switch">
+<createdBy>Luis</createdBy>
+<createdTime>2022-01-11 19:00:59 UTC</createdTime>
+<ownerDesignName>modelAdmin</ownerDesignName>
+<engineerTo>
+<item key="32253C9C-B2FA-E091-60CB-9F6D8D6669D8" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="559FEA61-8818-AA5A-9844-064639A46DA3">
+<createdBy>Luis</createdBy>
+<createdTime>2022-01-11 19:01:06 UTC</createdTime>
+<ownerDesignName>modelAdmin</ownerDesignName>
+<engineerTo>
+<item key="32253C9C-B2FA-E091-60CB-9F6D8D6669D8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="status" id="134AB40A-8883-009B-3A61-499AD26ED185">
+<createdBy>Luis</createdBy>
+<createdTime>2022-01-11 19:01:06 UTC</createdTime>
+<ownerDesignName>modelAdmin</ownerDesignName>
+<engineerTo>
+<item key="32253C9C-B2FA-E091-60CB-9F6D8D6669D8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="4F8BBF3A-8695-06AA-287D-F6E1EA8EE84B" name="Switch PK">
+<createdBy>Luis</createdBy>
+<createdTime>2022-01-11 19:01:14 UTC</createdTime>
+<ownerDesignName>modelAdmin</ownerDesignName>
+<engineerTo>
+<item key="32253C9C-B2FA-E091-60CB-9F6D8D6669D8" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>559FEA61-8818-AA5A-9844-064639A46DA3</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

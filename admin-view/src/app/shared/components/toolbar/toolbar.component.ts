@@ -24,6 +24,7 @@ export class ToolbarComponent implements OnInit {
   })
 
   sw: Switch;
+  swLogin: Switch;
   user2: User = {
     id: 1,
     username: 'a',
@@ -42,25 +43,33 @@ export class ToolbarComponent implements OnInit {
     
   }
 
-
-  changeStatus(){
-    if(this.sw.status){
-      this.sw.status = false;
-    } else {
-      this.sw.status = true;
-    }
-    this.swService.update(this.sw)
-    // this.swService.update(this.sw).pipe(
-    //   catchError(error => {
-    //     Swal.fire({
-    //       icon: 'error',
-    //       title: ':(',
-    //       text: 'Cannot change the status mode. Please try again later'
-    //     })
-    //     return EMPTY;
-    //   })
-    // )
+  seeStatus2(){
+    this.swService.get("2").subscribe(data => {
+      this.swLogin = data.sw
+    })
   }
+
+
+  changeStatus(id: any){
+    if(id == 1){
+      if(this.sw.status){
+        this.sw.status = false;
+      } else {
+        this.sw.status = true;
+      }  
+    } else if(id == 2){
+      if(this.sw.status){
+        this.sw.status = false;
+      } else {
+        this.sw.status = true;
+      }
+  
+    }
+    this.swService.update(this.sw, id)
+  }
+
+
+
 
   logOut(){
     localStorage.clear();
@@ -70,6 +79,7 @@ export class ToolbarComponent implements OnInit {
   ngOnInit(): void {
     this.user = JSON.parse(localStorage.getItem("user")!);
     this.seeStatus();
+    this.seeStatus2();
   }
 
 }

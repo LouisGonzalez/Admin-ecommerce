@@ -57,15 +57,17 @@ export class ToolbarComponent implements OnInit {
       } else {
         this.sw.status = true;
       }  
+      this.swService.update(this.sw, id)
+
     } else if(id == 2){
       if(this.swLogin.status){
         this.swLogin.status = false;
       } else {
         this.swLogin.status = true;
       }
+      this.swService.update(this.swLogin, id)
   
     }
-    this.swService.update(this.sw, id)
   }
 
 
